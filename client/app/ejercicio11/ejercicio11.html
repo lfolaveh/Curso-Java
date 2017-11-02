@@ -1,0 +1,15 @@
+<h3 class="text-center">Alquirir Traje</h3>
+
+<form class="container" ng-submit="vm.adquirirTraje()">
+
+	<div class="form-group">
+		<label for="">Costo del Traje</label>
+		<input type="text" class="form-control" id="" placeholder="Costo" ng-model="vm.ct">
+	</div>
+
+	
+	<button type="submit" class="btn btn-primary">Submit</button>
+
+	<p>El precio final es: {{vm.pf}}</p>
+	<p>El descuento es: {{vm.de}}</p>
+</form>

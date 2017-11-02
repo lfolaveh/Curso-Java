@@ -1,0 +1,14 @@
+<h3 class="container">Sueldo Semanal del Trabajador</h3>
+
+<form class="terreno container" >
+
+  <label for="">Horas trabajadas</label>
+  <input class="number" type="text" name="" placeholder="Horas" ng-model="vm.ht">
+
+  <label for="">Pago por hora</label>
+  <input class="number" type="text" name="" placeholder="Pago" ng-model="vm.ph">
+
+  <button class="promedios" ng-click="vm.calcularSueldo()">Calcular</button>
+
+  <p>El sueldo semanal obtenido es: {{vm.ss}}</p>
+</form>

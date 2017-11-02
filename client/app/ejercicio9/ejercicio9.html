@@ -1,0 +1,19 @@
+<h3 class="text-center">Calcular pago del volumen del Agua</h3>
+
+<form class="container" ng-submit="vm.calcularAlberca()">
+	<label for="">Altura de la alberca</label>
+	<input type="numero" class="form-control" id="" placeholder="Altura" ng-model="vm.a">
+
+	<label for="">Largo de la alberca</label>
+	<input type="numero" class="form-control" id="" placeholder="Largo" ng-model="vm.l">
+
+	<label for="">Ancho de la alberca</label>
+	<input type="numero" class="form-control" id="" placeholder="Ancho" ng-model="vm.n">
+
+	<label for="">Costo del metro cúbico</label>
+	<input type="numero" class="form-control" id="" placeholder="Costo" ng-model="vm.cm">
+
+	<button type="submit" class="btn btn-primary">Calcular</button>
+
+	<p>El pago que se debe realizar con base en el volumen de agua: {{vm.pag}}</p>
+</form>

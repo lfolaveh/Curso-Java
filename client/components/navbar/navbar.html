@@ -1,0 +1,50 @@
+<div class="navbar navbar-default navbar-static-top" ng-controller="NavbarController">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" ng-click="nav.isCollapsed = !nav.isCollapsed">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="/" class="navbar-brand">javascript</a>
+    </div>
+    <div uib-collapse="nav.isCollapsed" class="navbar-collapse collapse" id="navbar-main">
+      <ul class="nav navbar-nav">
+        <li ng-repeat="item in nav.menu" ui-sref-active="active">
+            <a ui-sref="{{item.state}}">{{item.title}}</a>
+        </li>
+        <li ui-sref-active="active">
+            <a ui-sref="areaRectangulo">areaRectangulo</a>
+        </li>
+        <li ng-repeat="item in nav.menu" ui-sref-active="active">
+            <a ui-sref="circuferencia">circuferencia</a>
+        </li>
+        <li ng-repeat="item in nav.menu" ui-sref-active="active">
+            <a ui-sref="promedio">promedio</a>
+        </li>
+        <li ng-repeat="item in nav.menu" ui-sref-active="active">
+            <a ui-sref="terreno">terreno</a>
+        </li>
+        <li ng-repeat="item in nav.menu" ui-sref-active="active">
+            <a ui-sref="triangulos">triangulos</a>
+        </li>
+        <li ng-repeat="item in nav.menu" ui-sref-active="active">
+            <a ui-sref="precioGalon">precioGalon</a>
+        </li>
+        <li ng-repeat="item in nav.menu" ui-sref-active="active">
+            <a ui-sref="ejercicio8">ejercicio8</a>
+        </li>
+        <li ng-repeat="item in nav.menu" ui-sref-active="active">
+            <a ui-sref="ejercicio9">ejercicio9</a>
+        </li>
+        <li ng-repeat="item in nav.menu" ui-sref-active="active">
+            <a ui-sref="ejercicio10">ejercicio10</a>
+        </li>
+        <li ng-repeat="item in nav.menu" ui-sref-active="active">
+            <a ui-sref="ejercicio11">ejercicio11</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
